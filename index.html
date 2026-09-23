@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Bassam Salim — Cybersecurity Analyst</title>
-<meta name="description" content="Bassam Salim — cybersecurity analyst specialising in application security, vulnerability management and cloud security controls." />
+<title>Mohammud Bassam Salim — Cybersecurity Analyst</title>
+<meta name="description" content="Mohammud Bassam Salim — cybersecurity analyst specialising in application security, vulnerability management and cloud security controls." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -60,7 +60,6 @@ body{
   font-weight:400;
   overflow-x:hidden;
 }
-/* faint survey grid + one warm mint bloom behind the hero */
 body::before{
   content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
   background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
@@ -82,7 +81,6 @@ a{color:inherit;}
 .wrap{width:min(1120px,100% - 2.6rem);margin-inline:auto;}
 .mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.84em;letter-spacing:-.01em;}
 
-/* ---------- top bar ---------- */
 .bar{
   position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
@@ -110,7 +108,6 @@ a{color:inherit;}
 .bar-cta:hover{transform:translateY(-1px);background:var(--moss-deep);}
 @media (max-width:860px){.navlinks{display:none;}}
 
-/* ---------- hero ---------- */
 .hero{padding:clamp(2.6rem,7vw,5.4rem) 0 clamp(2.4rem,5vw,4rem);}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:clamp(2rem,5vw,4.2rem);align-items:center;}
 .availability{display:inline-flex;align-items:center;gap:.55rem;font-family:"Bricolage Grotesque",sans-serif;font-size:.8rem;font-weight:500;color:var(--ink-soft);border:1px solid var(--line);background:var(--card);padding:.34rem .8rem .34rem .6rem;border-radius:999px;}
@@ -138,7 +135,6 @@ a{color:inherit;}
 .btn-ghost:hover{border-color:var(--moss);color:var(--moss-deep);}
 .btn svg{width:16px;height:16px;}
 
-/* ---------- portrait ---------- */
 .portrait-stage{position:relative;justify-self:end;width:100%;max-width:400px;}
 .portrait-stage::before{
   content:"";position:absolute;inset:10% -9% -11% 9%;border-radius:36% 64% 42% 58%/54% 36% 64% 46%;
@@ -153,9 +149,7 @@ a{color:inherit;}
   background:var(--mint);border:1px solid var(--line);box-shadow:var(--shadow);
   aspect-ratio:4/5;isolation:isolate;
 }
-/* ▼▼ YOUR PHOTO GOES HERE — replace the src with "photo.jpg" or a data:image/jpeg;base64,... string ▼▼ */
 .portrait{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.02) contrast(1.02);}
-/* ▲▲ nothing else needs to change ▲▲ */
 .scan{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;}
 :root[data-theme="dark"] .scan,:root:not([data-theme="light"]) .scan{mix-blend-mode:screen;opacity:.5;}
 .scan::before{
@@ -181,14 +175,12 @@ a{color:inherit;}
   .lede{max-width:46ch;}
 }
 
-/* ---------- sections ---------- */
 section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .sec-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.2rem;}
 .sec-head h2{font-size:clamp(1.6rem,3.2vw,2.15rem);}
 .sec-head .rule{flex:1;height:1px;background:var(--line);}
 .sec-head .count{font-family:"JetBrains Mono",monospace;font-size:.76rem;color:var(--ink-faint);}
 
-/* about */
 .about-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.8rem,4vw,3.4rem);align-items:start;}
 .about-grid p{color:var(--ink-soft);}
 .about-grid p strong{color:var(--ink);font-weight:500;}
@@ -208,7 +200,6 @@ section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .chip:hover{border-color:var(--sage);color:var(--ink);}
 @media (max-width:860px){.about-grid{grid-template-columns:1fr;}}
 
-/* experience */
 .timeline{position:relative;padding-left:2.1rem;}
 .timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--moss),var(--line));}
 .job{position:relative;padding-bottom:2.6rem;}
@@ -225,7 +216,6 @@ section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .job li{position:relative;padding-left:1.35rem;color:var(--ink-soft);font-size:1rem;line-height:1.6;}
 .job li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:1.5px;background:var(--moss);}
 
-/* projects */
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:1.1rem;}
 .proj{
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.35rem 1.45rem;
@@ -239,7 +229,6 @@ section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .proj .stack{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto;padding-top:.35rem;}
 .proj .stack span{font-family:"JetBrains Mono",monospace;font-size:.7rem;color:var(--ink-faint);border:1px solid var(--line);padding:.24rem .5rem;border-radius:6px;}
 
-/* credentials */
 .cred-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.6rem,4vw,3rem);align-items:start;}
 .degree{padding:1.1rem 0;border-top:1px solid var(--line);}
 .degree:first-of-type{border-top:0;padding-top:0;}
@@ -260,7 +249,6 @@ section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .paper p{font-size:.93rem;color:var(--ink-soft);margin:0;}
 @media (max-width:860px){.cred-grid{grid-template-columns:1fr;}}
 
-/* contact */
 .contact{text-align:center;padding-bottom:clamp(3rem,7vw,5rem);}
 .contact h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:.7rem;}
 .contact p{margin-inline:auto;color:var(--ink-soft);}
@@ -274,7 +262,6 @@ section{padding:clamp(3rem,6.5vw,5.2rem) 0;}
 .link-card:hover{border-color:var(--moss);transform:translateY(-2px);color:var(--moss-deep);}
 footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:center;font-size:.82rem;color:var(--ink-faint);}
 
-/* ---------- motion ---------- */
 .rise{opacity:0;transform:translateY(14px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1);}
 .rise.in{opacity:1;transform:none;}
 .hero .stagger{opacity:0;transform:translateY(16px);animation:enter .9s cubic-bezier(.2,.7,.3,1) forwards;}
@@ -300,11 +287,12 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
   <div class="wrap bar-in">
     <a class="mark" href="#top">
       <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.6 4.6 5.6v6c0 4.6 3.1 8.2 7.4 9.8 4.3-1.6 7.4-5.2 7.4-9.8v-6Z"/><path d="m9.2 11.8 2 2 3.6-3.8"/></svg>
-      Bassam Salim
+      Mohammud Bassam Salim
     </a>
     <nav class="navlinks" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#toolkit">Toolkit</a>
+      <a href="#forensics">Forensics</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#credentials">Credentials</a>
@@ -315,13 +303,12 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
 
 <main id="top">
 
-  <!-- ══════════ HERO ══════════ -->
   <section class="hero wrap" style="padding-top:clamp(2rem,5vw,3.6rem)">
     <div class="hero-grid">
       <div class="hero-copy">
         <span class="availability stagger"><span class="pulse"></span>Albany, NY — open to relocate</span>
-        <h1 class="stagger">Bassam<span class="surname">Salim</span></h1>
-        <div class="role stagger">Cybersecurity Analyst — application security, vulnerability management, cloud controls</div>
+        <h1 class="stagger">Mohammud Bassam<span class="surname">Salim</span></h1>
+        <div class="role stagger">Cybersecurity Analyst — application security, digital forensics, cloud controls</div>
         <p class="lede stagger">I find the weaknesses in banking software <em>before</em> someone else does, then stay with the fix until it ships.</p>
         <div class="hero-facts stagger">
           <div class="fact"><b>2+ yrs</b><span>Application security</span></div>
@@ -340,16 +327,9 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
         </div>
       </div>
 
-      <!-- ══════════ PHOTO — swap the src below for your own image ══════════ -->
       <div class="portrait-stage">
         <div class="portrait-frame">
-          <!--
-            HOW TO ADD THE PHOTO:
-            Option A — keep a file next to this page:   src="bassam.jpg"
-            Option B — embed it (fully self-contained): src="data:image/jpeg;base64,PASTE_BASE64_HERE"
-            Portrait crops best at a 4:5 ratio (e.g. 800 × 1000 px).
-          -->
-          <img class="portrait" id="portrait" alt="Portrait of Bassam Salim"
+          <img class="portrait" id="portrait" alt="Portrait of Mohammud Bassam Salim"
                src="https://raw.githubusercontent.com/bassamsalim99/portfoilo.github.io/refs/heads/main/white%20image.png" />
           <div class="scan" aria-hidden="true"></div>
           <span class="bracket tl" aria-hidden="true"></span>
@@ -362,14 +342,13 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     </div>
   </section>
 
-  <!-- ══════════ ABOUT + TOOLKIT ══════════ -->
   <section id="about" class="wrap rise">
     <div class="sec-head"><h2>About</h2><span class="rule"></span><span class="count">01</span></div>
     <div class="about-grid">
       <div>
         <p>For two and a half years at <strong>Sopra Banking Software</strong> I worked where the money actually moves: Java APIs behind retail and corporate banking platforms. My job was to break them on purpose — SQL injection, broken authentication, sloppy session handling — and then sit with the developers who owned the code until the fix was real and in production.</p>
         <p>That work spanned engineering teams in the US, France, Spain and Brazil, so most of it came down to writing findings that a developer six time zones away could act on without a follow-up call.</p>
-        <p>I've since finished an <strong>MS in Digital Forensics and Cybersecurity</strong> at the University at Albany with a 4.0, deepening the detection side: SIEM monitoring, traffic analysis, and machine learning applied to noisy SOC data.</p>
+        <p>I've since finished an <strong>MS in Digital Forensics and Cybersecurity</strong> at the University at Albany with a 4.0, deepening both the detection side — SIEM monitoring, traffic analysis, and machine learning applied to noisy SOC data — and the investigative side, working forensic caseloads that took me from mobile devices and disk images through to a defensible report.</p>
         <blockquote class="pull">A vulnerability report that nobody fixes is just a document. I measure the work by what gets closed.</blockquote>
       </div>
 
@@ -414,9 +393,33 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     </div>
   </section>
 
-  <!-- ══════════ EXPERIENCE ══════════ -->
+  <section id="forensics" class="wrap rise">
+    <div class="sec-head"><h2>Digital forensics</h2><span class="rule"></span><span class="count">02</span></div>
+    <div class="about-grid">
+      <div>
+        <p>My MS coursework put me on the other side of an incident: instead of finding a flaw before it's exploited, I'm reconstructing what happened after the fact, from evidence that has to hold up outside the lab. Casework has run across mobile devices, hard drives and disk images, using industry-standard acquisition and analysis tools rather than ad-hoc scripts.</p>
+        <p>Each exercise followed a full forensic workflow: write-blocked acquisition and imaging, hashing for integrity verification, artifact and timeline analysis, and a findings report written the way it would need to read for a legal or HR audience — plain, sourced, and defensible.</p>
+       <!-- <p class="mono" style="display:block;color:var(--ink-faint);margin-top:.4rem;">Add specifics here once you decide what to make public — e.g. a sanitized mock-case writeup, tool comparison, or a redacted sample report.</p>
+    -->  </div>
+      <div class="skillset">
+        <div class="skillgroup">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg>Acquisition &amp; analysis platforms</h3>
+          <div class="chips">
+            <span class="chip">Magnet AXIOM</span><span class="chip">FTK (Forensic Toolkit)</span><span class="chip">Autopsy</span><span class="chip">Write blockers</span><span class="chip">Disk imaging</span>
+          </div>
+        </div>
+        <div class="skillgroup">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg>Evidence types</h3>
+          <div class="chips">
+            <span class="chip">Mobile device extraction</span><span class="chip">Hard drive / disk images</span><span class="chip">File system artifacts</span><span class="chip">Chain of custody</span><span class="chip">Timeline reconstruction</span><span class="chip">Hash verification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="experience" class="wrap rise">
-    <div class="sec-head"><h2>Experience</h2><span class="rule"></span><span class="count">02</span></div>
+    <div class="sec-head"><h2>Experience</h2><span class="rule"></span><span class="count">03</span></div>
     <div class="timeline">
       <article class="job">
         <div class="job-top">
@@ -449,15 +452,14 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     </div>
   </section>
 
-  <!-- ══════════ PROJECTS ══════════ -->
   <section id="projects" class="wrap rise">
-    <div class="sec-head"><h2>Things I built</h2><span class="rule"></span><span class="count">03</span></div>
+    <div class="sec-head"><h2>Things I built</h2><span class="rule"></span><span class="count">04</span></div>
     <div class="projects">
       <article class="proj">
         <svg class="proj-glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="5"/><circle cx="9" cy="12" r="4"/><circle cx="39" cy="12" r="4"/><circle cx="9" cy="37" r="4"/><circle cx="39" cy="37" r="4"/><path d="M12.5 14.5 20.5 21M35.5 14.5 27.5 21M12.5 34.5 20.5 27M35.5 34.5 27.5 27"/></svg>
         <h3>Network Security Toolkit</h3>
-        <p>A lightweight intrusion detection system that logs inbound and outbound traffic, flags unauthorised VPN usage, and catches TCP SYN flood attempts and ARP poisoning as they happen.</p>
-        <div class="stack"><span>Python</span><span>Kali Linux</span><span>Packet capture</span></div>
+        <p>A lightweight intrusion detection system that logs inbound and outbound traffic and flags unauthorised VPN usage by behaviour — flow-level features like packet size and timing, the same approach behind my published VPN-detection research — plus TCP SYN flood and ARP poisoning detection.</p>
+        <div class="stack"><span>Python</span><span>Kali Linux</span><span>Flow analysis</span></div>
       </article>
       <article class="proj">
         <svg class="proj-glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="34" height="26" rx="3"/><path d="m7 29 9-8 7 6 6-6 9 8"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M24 41h14M31 34v7"/></svg>
@@ -474,9 +476,8 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     </div>
   </section>
 
-  <!-- ══════════ CREDENTIALS ══════════ -->
   <section id="credentials" class="wrap rise">
-    <div class="sec-head"><h2>Credentials</h2><span class="rule"></span><span class="count">04</span></div>
+    <div class="sec-head"><h2>Credentials</h2><span class="rule"></span><span class="count">05</span></div>
     <div class="cred-grid">
       <div>
         <div class="degree">
@@ -492,6 +493,10 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
         <div class="paper">
           <h3>Published research</h3>
           <p>Co-author, “Detection of VPNs Using Machine Learning” — International Journal of Engineering Applied Sciences and Technology (IJEAST), Vol. 6, Issue 12, 2022.</p>
+          <p style="margin-top:.6rem;">Captured OpenVPN traffic — including sessions tunnelled through Stunnel to mimic ordinary HTTPS — alongside regular sessions in Wireshark, then used NetMate to pull TCP flow statistics (packet size, duration, inter-arrival and idle times) rather than inspecting payloads. After narrowing the feature set with Weka's correlation-based selection, a neural network classifier separated VPN from non-VPN flows using behaviour alone, even when the VPN was deliberately disguised as HTTPS.</p>
+          <div class="chips" style="margin-top:.8rem;">
+            <span class="chip">98.42% accuracy, 80/20 split</span><span class="chip">97.89% · 10-fold CV</span><span class="chip">~3,952 flow samples</span>
+          </div>
         </div>
       </div>
       <div class="certs">
@@ -515,7 +520,6 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     </div>
   </section>
 
-  <!-- ══════════ CONTACT ══════════ -->
   <section class="contact wrap rise">
     <h2>Let's talk security</h2>
     <p>Looking for analyst, application security and SOC roles — in Albany, remote, or anywhere a relocation makes sense.</p>
@@ -541,8 +545,6 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // section reveal — one quiet entrance per section
   var items = document.querySelectorAll('.rise');
   if (reduce || !('IntersectionObserver' in window)) {
     items.forEach(function(el){ el.classList.add('in'); });
@@ -554,14 +556,10 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2.2rem;text-align:cente
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     items.forEach(function(el){ io.observe(el); });
   }
-
-  // sticky bar hairline
   var bar = document.getElementById('bar');
   var onScroll = function(){ bar.classList.toggle('stuck', window.scrollY > 12); };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive:true });
-
-  // scroll spy
   var links = Array.prototype.slice.call(document.querySelectorAll('.navlinks a'));
   var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
   if ('IntersectionObserver' in window && targets.length){
